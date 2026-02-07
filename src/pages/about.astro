@@ -1,0 +1,215 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="About" description="The story behind Groundwork Coffee Co. — how two friends turned one espresso machine into three SLC cafes.">
+
+  <!-- Hero -->
+  <section class="relative pt-32 pb-16 lg:pt-40 lg:pb-20 bg-cream-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="ornament mb-4">
+        <span class="text-xs font-semibold tracking-[0.2em] uppercase text-forest-600">Our Story</span>
+      </div>
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl text-bark-900 mb-4">About Groundwork</h1>
+      <p class="text-bark-500 max-w-lg mx-auto text-lg">
+        Good coffee, simple values, and a relentless obsession with getting the details right.
+      </p>
+    </div>
+  </section>
+
+  <!-- Origin Story -->
+  <section class="py-12 lg:py-20 bg-cream-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center mb-20">
+        <div class="reveal">
+          <div class="image-placeholder aspect-[4/3] rounded-2xl">
+            <div class="absolute inset-0 flex items-center justify-center text-center p-6">
+              <div>
+                <svg class="w-12 h-12 text-forest-500/30 mx-auto mb-2" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                  <circle cx="9" cy="9" r="2"/>
+                  <path d="m21 15-3.086-3.086a2 2 0 0 0-2.828 0L6 21"/>
+                </svg>
+                <p class="text-forest-400/50 text-xs">Founders photo / original shop</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal">
+          <h2 class="font-display text-2xl sm:text-3xl text-bark-900 mb-6">It started with 400 square feet and a lot of nerve.</h2>
+          <div class="space-y-4 text-bark-600 leading-relaxed">
+            <p>
+              In 2019, two friends — Maya Chen and Alex Torres — quit their corporate jobs with a shared conviction: Salt Lake City deserved better coffee. Not "good enough" coffee. Not "for Utah" coffee. Coffee that could stand alongside the best roasters in Portland, Melbourne, or Tokyo.
+            </p>
+            <p>
+              They found a 400-square-foot space on Main Street, bought a used La Marzocca, and opened the doors with a three-item menu: espresso, drip, and a damn good croissant from a local baker.
+            </p>
+            <p>
+              The line was out the door within a month.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="section-divider max-w-2xl mx-auto mb-20"></div>
+
+      <!-- Values -->
+      <div class="text-center mb-14 reveal">
+        <h2 class="font-display text-2xl sm:text-3xl text-bark-900 mb-4">What we believe</h2>
+        <p class="text-bark-500 max-w-md mx-auto">These aren't marketing lines. They're the decisions we make every day.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 stagger-children mb-20">
+        <div class="reveal bg-white rounded-2xl p-7 border border-cream-200 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-forest-50 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/>
+              <path d="m2 12 10-6 10 6"/>
+              <path d="m2 12 10 6 10-6"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-bark-900 text-lg mb-2">Source directly</h3>
+          <p class="text-sm text-bark-500 leading-relaxed">
+            We buy from small farms across Latin America, East Africa, and Southeast Asia. No middlemen. Fair prices. Long-term relationships with producers who care about their craft as much as we care about ours.
+          </p>
+        </div>
+
+        <div class="reveal bg-white rounded-2xl p-7 border border-cream-200 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-forest-50 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3v18"/>
+              <path d="M5.636 5.636l12.728 12.728"/>
+              <path d="M18.364 5.636L5.636 18.364"/>
+              <path d="M3 12h18"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-bark-900 text-lg mb-2">Roast with purpose</h3>
+          <p class="text-sm text-bark-500 leading-relaxed">
+            Every bean has a story and a sweet spot. We roast in small batches at our SLC roastery, profiling each origin to highlight what makes it unique — not to hide behind a dark, generic char.
+          </p>
+        </div>
+
+        <div class="reveal bg-white rounded-2xl p-7 border border-cream-200 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-forest-50 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+              <circle cx="9" cy="7" r="4"/>
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+              <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-bark-900 text-lg mb-2">Build community</h3>
+          <p class="text-sm text-bark-500 leading-relaxed">
+            A coffee shop should be a living room for the neighborhood. We host events, support local artists, and make sure there's always a seat for someone who just needs a quiet place to think.
+          </p>
+        </div>
+
+        <div class="reveal bg-white rounded-2xl p-7 border border-cream-200 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-forest-50 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+              <line x1="12" y1="22.08" x2="12" y2="12"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-bark-900 text-lg mb-2">Keep it simple</h3>
+          <p class="text-sm text-bark-500 leading-relaxed">
+            Great ingredients, prepared with care. No gimmicks, no unnecessary complexity. If something doesn't make the coffee better, it doesn't make the menu.
+          </p>
+        </div>
+
+        <div class="reveal bg-white rounded-2xl p-7 border border-cream-200 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-forest-50 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M12 6v6l4 2"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-bark-900 text-lg mb-2">Pay people well</h3>
+          <p class="text-sm text-bark-500 leading-relaxed">
+            Our baristas aren't "team members" — they're craftspeople. We pay above market, provide benefits, and invest in ongoing training. Happy people make better coffee.
+          </p>
+        </div>
+
+        <div class="reveal bg-white rounded-2xl p-7 border border-cream-200 shadow-sm">
+          <div class="w-12 h-12 rounded-xl bg-forest-50 flex items-center justify-center mb-4">
+            <svg class="w-6 h-6 text-forest-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+              <polyline points="22 4 12 14.01 9 11.01"/>
+            </svg>
+          </div>
+          <h3 class="font-semibold text-bark-900 text-lg mb-2">Tread lighter</h3>
+          <p class="text-sm text-bark-500 leading-relaxed">
+            Compostable cups, energy-efficient equipment, bikes encouraged. We're not perfect, but we're trying. We publish our sustainability report annually because accountability matters.
+          </p>
+        </div>
+      </div>
+
+      <div class="section-divider max-w-2xl mx-auto mb-20"></div>
+
+      <!-- Team -->
+      <div class="text-center mb-14 reveal">
+        <h2 class="font-display text-2xl sm:text-3xl text-bark-900 mb-4">The people behind the bar</h2>
+        <p class="text-bark-500 max-w-md mx-auto">A small team doing big things, one cup at a time.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 stagger-children">
+        {[
+          { name: "Maya Chen", role: "Co-Founder & Roaster", bio: "Former chemical engineer. Turned her precision into perfect roast profiles." },
+          { name: "Alex Torres", role: "Co-Founder & Operations", bio: "The organized one. Keeps three locations running like clockwork." },
+          { name: "Jordan Lee", role: "Head Barista, Downtown", bio: "2024 SLC Latte Art Champion. Makes a flat white that'll ruin all others for you." },
+          { name: "Sam Okafor", role: "Pastry Chef", bio: "Classically trained, locally inspired. The croissants are her love language." },
+        ].map((person) => (
+          <div class="reveal text-center">
+            <div class="image-placeholder aspect-square rounded-full w-32 h-32 mx-auto mb-4">
+              <div class="absolute inset-0 flex items-center justify-center">
+                <svg class="w-8 h-8 text-forest-500/30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+            </div>
+            <h3 class="font-semibold text-bark-900">{person.name}</h3>
+            <p class="text-xs text-forest-600 font-medium uppercase tracking-wider mb-2">{person.role}</p>
+            <p class="text-sm text-bark-500">{person.bio}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="py-16 bg-forest-800 relative overflow-hidden">
+    <div class="grain-overlay"></div>
+    <div class="relative max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 text-center">
+        {[
+          { number: "500K+", label: "Cups Served" },
+          { number: "12", label: "Single Origins" },
+          { number: "22", label: "Team Members" },
+          { number: "3", label: "SLC Locations" },
+        ].map((stat) => (
+          <div class="reveal">
+            <p class="text-3xl sm:text-4xl font-bold text-forest-300 mb-1">{stat.number}</p>
+            <p class="text-xs text-cream-500 uppercase tracking-wider">{stat.label}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Careers CTA -->
+  <section class="py-20 bg-cream-50">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center reveal">
+      <h2 class="font-display text-2xl sm:text-3xl text-bark-900 mb-4">Want to join us?</h2>
+      <p class="text-bark-500 mb-8 max-w-lg mx-auto">
+        We're always looking for curious, kind people who take their craft seriously (but don't take themselves too seriously).
+      </p>
+      <a href="mailto:jobs@groundworkcoffee.com" class="btn-primary px-8 py-3.5 rounded-full text-sm font-semibold text-white inline-block">
+        See Open Positions
+      </a>
+      <p class="text-xs text-bark-400 mt-3">jobs@groundworkcoffee.com</p>
+    </div>
+  </section>
+
+</Layout>

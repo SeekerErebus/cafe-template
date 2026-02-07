@@ -1,0 +1,57 @@
+{
+  "categories": [
+    {
+      "name": "Espresso",
+      "slug": "espresso",
+      "description": "Pulled on our La Marzocca Linea PB. Single origin rotates weekly.",
+      "items": [
+        { "name": "Espresso", "description": "Double shot, single origin", "price": "4.00" },
+        { "name": "Americano", "description": "Espresso, hot water", "price": "4.50" },
+        { "name": "Cortado", "description": "Equal parts espresso & steamed milk", "price": "5.00" },
+        { "name": "Flat White", "description": "Double ristretto, velvety microfoam", "price": "5.50" },
+        { "name": "Cappuccino", "description": "Espresso, steamed milk, dense foam", "price": "5.50" },
+        { "name": "Latte", "description": "Espresso, steamed milk, light foam", "price": "5.75" },
+        { "name": "Mocha", "description": "Espresso, house chocolate, steamed milk", "price": "6.25" }
+      ]
+    },
+    {
+      "name": "Brewed",
+      "slug": "brewed",
+      "description": "V60 pour-over, batch brew, and cold options.",
+      "items": [
+        { "name": "Drip Coffee", "description": "Batch brewed, rotates daily", "price": "3.50" },
+        { "name": "Pour Over", "description": "Single cup V60, choose your bean", "price": "5.50" },
+        { "name": "Cold Brew", "description": "18-hour steeped, smooth & bold", "price": "5.50" },
+        { "name": "Cold Brew on Nitro", "description": "Cascading, creamy cold brew on tap", "price": "6.00" },
+        { "name": "Iced Coffee", "description": "Flash-chilled drip over ice", "price": "4.50" }
+      ]
+    },
+    {
+      "name": "Specialty",
+      "slug": "specialty",
+      "description": "House-crafted drinks with seasonal ingredients.",
+      "items": [
+        { "name": "Lavender Oat Latte", "description": "House lavender syrup, oat milk, espresso", "price": "6.50" },
+        { "name": "Honey Cardamom Latte", "description": "Local honey, ground cardamom, steamed milk", "price": "6.50" },
+        { "name": "Matcha Latte", "description": "Ceremonial grade matcha, your choice of milk", "price": "6.00" },
+        { "name": "Chai Latte", "description": "House-spiced chai concentrate, steamed milk", "price": "5.75" },
+        { "name": "Golden Milk", "description": "Turmeric, ginger, cinnamon, oat milk", "price": "5.75" },
+        { "name": "Seasonal Special", "description": "Ask your barista — changes monthly", "price": "6.75" }
+      ]
+    },
+    {
+      "name": "Food",
+      "slug": "food",
+      "description": "Baked in-house daily. Sourced from local SLC farms.",
+      "items": [
+        { "name": "Avocado Toast", "description": "Sourdough, everything seasoning, pickled onion", "price": "9.50" },
+        { "name": "Breakfast Burrito", "description": "Scrambled eggs, black beans, green chile, cheddar", "price": "10.00" },
+        { "name": "Overnight Oats", "description": "Oats, chia, seasonal fruit, almond butter", "price": "7.50" },
+        { "name": "Almond Croissant", "description": "Flaky, filled with frangipane", "price": "4.75" },
+        { "name": "Banana Bread", "description": "Walnut, brown butter, thick slice", "price": "4.50" },
+        { "name": "Açai Bowl", "description": "Blended açai, granola, fresh fruit, honey", "price": "11.00" },
+        { "name": "Cookie", "description": "Rotating flavors — ask your barista", "price": "3.50" }
+      ]
+    }
+  ]
+}

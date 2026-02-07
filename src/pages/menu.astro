@@ -1,0 +1,140 @@
+---
+import Layout from '../layouts/Layout.astro';
+import menuData from '../data/menu.json';
+---
+
+<Layout title="Menu" description="Espresso, pour-overs, specialty drinks, and house-baked food at Groundwork Coffee Co.">
+
+  <!-- Hero -->
+  <section class="relative pt-32 pb-16 lg:pt-40 lg:pb-20 bg-cream-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="ornament mb-4">
+        <span class="text-xs font-semibold tracking-[0.2em] uppercase text-forest-600">What We're Serving</span>
+      </div>
+      <h1 class="font-display text-4xl sm:text-5xl lg:text-6xl text-bark-900 mb-4">Our Menu</h1>
+      <p class="text-bark-500 max-w-lg mx-auto text-lg">
+        Single origin espresso, house-made syrups, and everything baked fresh this morning.
+      </p>
+    </div>
+  </section>
+
+  <!-- Category Tabs -->
+  <section class="sticky top-18 sm:top-20 z-40 bg-cream-50/95 backdrop-blur-sm border-b border-cream-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex gap-2 overflow-x-auto py-4 scrollbar-hide" id="category-tabs">
+        {menuData.categories.map((cat, i) => (
+          <button
+            class={`category-tab whitespace-nowrap ${i === 0 ? 'active' : ''}`}
+            data-category={cat.slug}
+          >
+            {cat.name}
+          </button>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Content -->
+  <section class="py-12 lg:py-20 bg-cream-50">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      {menuData.categories.map((category, catIndex) => (
+        <div
+          class="menu-category mb-16 last:mb-0"
+          data-category={category.slug}
+          id={`category-${category.slug}`}
+        >
+          <div class="mb-8 reveal">
+            <h2 class="font-display text-2xl sm:text-3xl text-bark-900 mb-2">{category.name}</h2>
+            <p class="text-bark-500 text-sm">{category.description}</p>
+          </div>
+
+          <div class="stagger-children">
+            {category.items.map((item) => (
+              <div class="menu-item reveal group">
+                <div class="flex items-start justify-between gap-4">
+                  <div class="flex-1">
+                    <h3 class="font-semibold text-bark-900 group-hover:text-forest-700 transition-colors">{item.name}</h3>
+                    <p class="text-sm text-bark-500 mt-0.5">{item.description}</p>
+                  </div>
+                  <span class="text-forest-600 font-bold text-lg shrink-0">${item.price}</span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      ))}
+
+      <!-- Milk options note -->
+      <div class="mt-12 p-6 bg-forest-50 rounded-2xl border border-forest-100 reveal">
+        <div class="flex gap-4 items-start">
+          <div class="w-10 h-10 rounded-full bg-forest-100 flex items-center justify-center shrink-0">
+            <svg class="w-5 h-5 text-forest-600" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+            </svg>
+          </div>
+          <div>
+            <h4 class="font-semibold text-bark-900 mb-1">Milk alternatives</h4>
+            <p class="text-sm text-bark-600">
+              We carry oat, almond, and coconut milk at no extra charge. All of our syrups are house-made. Ask about sugar-free options.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Order CTA -->
+  <section class="py-16 bg-forest-800 relative overflow-hidden">
+    <div class="grain-overlay"></div>
+    <div class="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-display text-2xl sm:text-3xl text-cream-50 mb-4">Know what you want?</h2>
+      <p class="text-cream-300 mb-8">Skip the line. Order ahead and pick up at any location.</p>
+      <a href="/order" class="btn-primary px-8 py-3.5 rounded-full text-sm font-semibold text-white inline-block">
+        Order Online
+      </a>
+    </div>
+  </section>
+
+</Layout>
+
+<script>
+  // Category tab smooth scroll
+  const tabs = document.querySelectorAll('[data-category]') as NodeListOf<HTMLButtonElement>;
+  const categories = document.querySelectorAll('.menu-category') as NodeListOf<HTMLElement>;
+
+  tabs.forEach(tab => {
+    if (tab.tagName === 'BUTTON') {
+      tab.addEventListener('click', () => {
+        const slug = tab.dataset.category;
+        const target = document.getElementById(`category-${slug}`);
+        if (target) {
+          const offset = 140; // nav + tabs height
+          const top = target.getBoundingClientRect().top + window.scrollY - offset;
+          window.scrollTo({ top, behavior: 'smooth' });
+        }
+        // Update active state
+        document.querySelectorAll('.category-tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+      });
+    }
+  });
+
+  // Update active tab on scroll
+  const observerOptions = {
+    rootMargin: '-160px 0px -60% 0px',
+    threshold: 0
+  };
+
+  const tabObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const slug = (entry.target as HTMLElement).dataset.category;
+        document.querySelectorAll('.category-tab').forEach(t => {
+          t.classList.toggle('active', (t as HTMLElement).dataset.category === slug);
+        });
+      }
+    });
+  }, observerOptions);
+
+  categories.forEach(cat => tabObserver.observe(cat));
+</script>

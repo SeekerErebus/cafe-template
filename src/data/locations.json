@@ -1,0 +1,52 @@
+{
+  "locations": [
+    {
+      "name": "Downtown",
+      "slug": "downtown",
+      "address": "247 S Main St",
+      "city": "Salt Lake City, UT 84101",
+      "phone": "(801) 555-0147",
+      "email": "downtown@groundworkcoffee.com",
+      "description": "Our flagship. Exposed brick, big windows, and the best people-watching in the city. Grab a window seat and stay awhile.",
+      "features": ["Free WiFi", "Outdoor Patio", "Bike Rack", "EV Charging"],
+      "hours": {
+        "weekdays": "6:00 AM - 8:00 PM",
+        "saturday": "7:00 AM - 9:00 PM",
+        "sunday": "7:00 AM - 6:00 PM"
+      },
+      "mapPlaceholder": "Downtown SLC — near Gallivan Center"
+    },
+    {
+      "name": "Sugar House",
+      "slug": "sugar-house",
+      "address": "1045 E 2100 S",
+      "city": "Salt Lake City, UT 84106",
+      "phone": "(801) 555-0239",
+      "email": "sugarhouse@groundworkcoffee.com",
+      "description": "Cozy neighborhood spot in the heart of Sugar House. Board games on the shelf, dogs welcome on the patio.",
+      "features": ["Dog-Friendly Patio", "Board Games", "Free WiFi", "Street Parking"],
+      "hours": {
+        "weekdays": "6:30 AM - 7:00 PM",
+        "saturday": "7:00 AM - 8:00 PM",
+        "sunday": "8:00 AM - 5:00 PM"
+      },
+      "mapPlaceholder": "Sugar House — near Sugar House Park"
+    },
+    {
+      "name": "9th & 9th",
+      "slug": "9th-and-9th",
+      "address": "902 E 900 S",
+      "city": "Salt Lake City, UT 84105",
+      "phone": "(801) 555-0382",
+      "email": "9th@groundworkcoffee.com",
+      "description": "Our newest and smallest — a walk-up window and a handful of seats. Perfect for a quick pour-over on your way to the trails.",
+      "features": ["Walk-Up Window", "To-Go Focus", "Trail Access Nearby"],
+      "hours": {
+        "weekdays": "6:00 AM - 4:00 PM",
+        "saturday": "7:00 AM - 4:00 PM",
+        "sunday": "7:00 AM - 3:00 PM"
+      },
+      "mapPlaceholder": "9th & 9th — SLC's favorite intersection"
+    }
+  ]
+}

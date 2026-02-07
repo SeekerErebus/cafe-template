@@ -1,0 +1,52 @@
+{
+  "events": [
+    {
+      "title": "Latte Art Throwdown",
+      "date": "Every 2nd Thursday",
+      "time": "7:00 PM",
+      "location": "Downtown",
+      "description": "Baristas compete, you judge. Free tasting flights for spectators. Sign up to compete — all skill levels welcome.",
+      "tag": "Competition"
+    },
+    {
+      "title": "Cupping Session",
+      "date": "Saturdays",
+      "time": "10:00 AM",
+      "location": "Downtown",
+      "description": "Join our roaster to taste and score new single origins before they hit the menu. Learn to identify tasting notes like a pro.",
+      "tag": "Education"
+    },
+    {
+      "title": "Vinyl & Vibes",
+      "date": "Fridays",
+      "time": "6:00 PM - 9:00 PM",
+      "location": "Sugar House",
+      "description": "Live DJs spin vinyl while you sip. Craft cocktail-style coffee drinks available. No cover.",
+      "tag": "Music"
+    },
+    {
+      "title": "Morning Yoga + Cold Brew",
+      "date": "Sundays",
+      "time": "8:00 AM",
+      "location": "Sugar House",
+      "description": "Flow on the patio, cold brew after. Mats provided. All levels. $10 includes a drink of your choice.",
+      "tag": "Wellness"
+    },
+    {
+      "title": "Open Mic Night",
+      "date": "1st & 3rd Wednesday",
+      "time": "7:00 PM",
+      "location": "Downtown",
+      "description": "Poetry, acoustic sets, comedy — bring whatever you've got. Sign-up starts at 6:30 PM. Supportive crowd guaranteed.",
+      "tag": "Community"
+    },
+    {
+      "title": "Brew Methods Workshop",
+      "date": "Last Saturday of the month",
+      "time": "11:00 AM",
+      "location": "Downtown",
+      "description": "V60, AeroPress, Chemex, French Press — master them all. Take home a bag of beans. $25 per person.",
+      "tag": "Education"
+    }
+  ]
+}
