@@ -39,25 +39,25 @@ const currentPath = Astro.url.pathname;
               </svg>
             </div>
             <div class="flex flex-col leading-tight">
-              <span class="text-lg font-display text-forest-800 tracking-tight">Groundwork</span>
-              <span class="text-[10px] font-semibold tracking-[0.2em] uppercase text-bark-500 -mt-0.5">Coffee Co.</span>
+              <span class="nav-logo-name text-lg font-display tracking-tight">Groundwork</span>
+              <span class="nav-logo-sub text-[10px] font-semibold tracking-[0.2em] uppercase -mt-0.5">Coffee Co.</span>
             </div>
           </a>
 
           <!-- Desktop Nav -->
           <div class="hidden md:flex items-center gap-8">
-            <a href="/" class={`nav-link text-sm font-medium ${currentPath === '/' ? 'text-forest-700' : 'text-bark-600 hover:text-forest-700'}`}>Home</a>
-            <a href="/menu" class={`nav-link text-sm font-medium ${currentPath === '/menu' ? 'text-forest-700' : 'text-bark-600 hover:text-forest-700'}`}>Menu</a>
-            <a href="/locations" class={`nav-link text-sm font-medium ${currentPath === '/locations' ? 'text-forest-700' : 'text-bark-600 hover:text-forest-700'}`}>Locations</a>
-            <a href="/events" class={`nav-link text-sm font-medium ${currentPath === '/events' ? 'text-forest-700' : 'text-bark-600 hover:text-forest-700'}`}>Events</a>
-            <a href="/about" class={`nav-link text-sm font-medium ${currentPath === '/about' ? 'text-forest-700' : 'text-bark-600 hover:text-forest-700'}`}>About</a>
+            <a href="/" class={`nav-link text-sm font-medium ${currentPath === '/' ? 'nav-link-active' : ''}`}>Home</a>
+            <a href="/menu" class={`nav-link text-sm font-medium ${currentPath === '/menu' ? 'nav-link-active' : ''}`}>Menu</a>
+            <a href="/locations" class={`nav-link text-sm font-medium ${currentPath === '/locations' ? 'nav-link-active' : ''}`}>Locations</a>
+            <a href="/events" class={`nav-link text-sm font-medium ${currentPath === '/events' ? 'nav-link-active' : ''}`}>Events</a>
+            <a href="/about" class={`nav-link text-sm font-medium ${currentPath === '/about' ? 'nav-link-active' : ''}`}>About</a>
             <a href="/order" class="btn-primary px-5 py-2.5 rounded-full text-sm font-semibold text-white">
               Order Online
             </a>
           </div>
 
           <!-- Mobile menu button -->
-          <button id="mobile-menu-btn" class="md:hidden p-2 rounded-lg text-bark-600 hover:text-forest-700 hover:bg-cream-100 transition-colors" aria-label="Toggle menu">
+          <button id="mobile-menu-btn" class="nav-mobile-btn md:hidden p-2 rounded-lg hover:bg-cream-100/20 transition-colors" aria-label="Toggle menu">
             <svg class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
               <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
             </svg>

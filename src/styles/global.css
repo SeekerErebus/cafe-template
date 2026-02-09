@@ -235,12 +235,16 @@ body {
   left: 0;
   width: 0;
   height: 2px;
-  background: var(--color-forest-600);
-  transition: width 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  background: var(--color-cream-200);
+  transition: width 0.3s cubic-bezier(0.22, 1, 0.36, 1), background 0.3s ease;
 }
 
 .nav-link:hover::after {
   width: 100%;
+}
+
+.nav-scrolled .nav-link::after {
+  background: var(--color-forest-600);
 }
 
 /* Card hover */
@@ -306,6 +310,58 @@ body {
 .nav-scrolled {
   background: rgba(253, 252, 249, 0.97) !important;
   box-shadow: 0 1px 12px rgba(0,0,0,0.06);
+}
+
+/* Nav color transitions: light text at top (over dark hero), dark text when scrolled */
+#main-nav .nav-logo-name {
+  color: var(--color-cream-50);
+  transition: color 0.3s ease;
+}
+#main-nav .nav-logo-sub {
+  color: var(--color-cream-300);
+  transition: color 0.3s ease;
+}
+#main-nav .nav-link {
+  color: var(--color-cream-100);
+  transition: color 0.3s ease;
+}
+#main-nav .nav-link:hover {
+  color: var(--color-cream-50);
+}
+#main-nav .nav-link.nav-link-active {
+  color: var(--color-cream-50);
+}
+#main-nav .nav-mobile-btn {
+  color: var(--color-cream-100);
+  transition: color 0.3s ease;
+}
+#main-nav .nav-mobile-btn:hover {
+  color: var(--color-cream-50);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Scrolled state: switch to dark text */
+#main-nav.nav-scrolled .nav-logo-name {
+  color: var(--color-forest-800);
+}
+#main-nav.nav-scrolled .nav-logo-sub {
+  color: var(--color-bark-500);
+}
+#main-nav.nav-scrolled .nav-link {
+  color: var(--color-bark-600);
+}
+#main-nav.nav-scrolled .nav-link:hover {
+  color: var(--color-forest-700);
+}
+#main-nav.nav-scrolled .nav-link.nav-link-active {
+  color: var(--color-forest-700);
+}
+#main-nav.nav-scrolled .nav-mobile-btn {
+  color: var(--color-bark-600);
+}
+#main-nav.nav-scrolled .nav-mobile-btn:hover {
+  color: var(--color-forest-700);
+  background: var(--color-cream-100);
 }
 
 /* Mobile menu */
